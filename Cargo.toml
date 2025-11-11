@@ -1,0 +1,40 @@
+[package]
+name = "rs-git-status2arrow-ipc-stream"
+version = "0.1.0"
+edition = "2024"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
+panic = "deny"
+
+[[bin]]
+name = "git-status2arrow-ipc-stream"
+
+[dependencies.clap]
+version = "4"
+features = ["derive"]
+
+[dependencies.arrow]
+version = "57"
+default-features = false
+features = [
+	"ipc",
+]
+
+[dependencies.gix]
+version = "0"
+default-features = false
+features = [
+	"status",
+]
+
+[dependencies.serde]
+version = "1"
+features = ["derive"]
+
+[dependencies.serde_json]
+version = "1"
