@@ -3,6 +3,17 @@ name = "rs-git-status2arrow-ipc-stream"
 version = "0.1.0"
 edition = "2024"
 
+description = "Git status to Arrow IPC stream"
+license = "Apache-2.0"
+repository = "https://github.com/takanoriyanagitani/rs-git-status2arrow-ipc-stream"
+homepage = "https://github.com/takanoriyanagitani/rs-git-status2arrow-ipc-stream"
+documentation = "https://docs.rs/rs-git-status2arrow-ipc-stream/latest"
+keywords = ["git", "status", "arrow", "ipc", "stream"]
+
+exclude = [
+	"git-status2arrow-ipc-stream",
+]
+
 [lints.rust]
 unsafe_code = "forbid"
 
